@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/sinch/verification-ios-sdk.git", :tag => "#{spec.version}" }
 
-  spec.source_files  = "Verification/Verification/Classes", "Verification/Verification/Classes/**/*.{h,m,swift}"
+  spec.source_files  = "Verification/Verification/Classes", "Verification/Verification/Classes/**/*.{h,m,c,swift}"
   spec.exclude_files = "Verification/Verification/Classes/Exclude"
   
   spec.dependency "Alamofire", "~> 5.2"
