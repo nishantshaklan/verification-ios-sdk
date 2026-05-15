@@ -33,7 +33,6 @@
 		B197B94A24E16E3100889BD0 /* VerificaitonLanguageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197B94324E16E3000889BD0 /* VerificaitonLanguageTests.swift */; };
 		B197B94B24E16E3100889BD0 /* AcceptedLanguagesParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197B94424E16E3000889BD0 /* AcceptedLanguagesParsingTests.swift */; };
 		B197B94C24E16E3100889BD0 /* AppKeyAuthorizationMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197B94524E16E3000889BD0 /* AppKeyAuthorizationMethodTests.swift */; };
-		B7FBBE38F38F4F59924B4B96 /* BasicAuthorizationMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D206F8A510420D9EA4F0F9 /* BasicAuthorizationMethodTests.swift */; };
 		B197B94D24E16E3100889BD0 /* SimCardInfoHolderEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197B94724E16E3100889BD0 /* SimCardInfoHolderEncodingTests.swift */; };
 		B1C3C0AE27CE35D60021A0EC /* HttpRawResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C3C0AD27CE35D60021A0EC /* HttpRawResponseHandler.swift */; };
 		B1CA8194257F74340097B625 /* AutoVerificationInitiationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA8193257F74340097B625 /* AutoVerificationInitiationData.swift */; };
@@ -102,7 +101,6 @@
 		B1E8426424E154A900C29730 /* AuthorizationMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8423424E154A900C29730 /* AuthorizationMethod.swift */; };
 		B1E8426524E154A900C29730 /* SinchSessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8423524E154A900C29730 /* SinchSessionHandler.swift */; };
 		B1E8426624E154A900C29730 /* AppKeyAuthorizationMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8423624E154A900C29730 /* AppKeyAuthorizationMethod.swift */; };
-		D4DDEF24C60A4DC293E37884 /* BasicAuthorizationMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBC38B2F338408D80F12ECB /* BasicAuthorizationMethod.swift */; };
 		B1E8426724E154A900C29730 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8423724E154A900C29730 /* ApiManager.swift */; };
 		B1E8426824E154A900C29730 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8423824E154A900C29730 /* ApiRouter.swift */; };
 		B1E8426924E154A900C29730 /* LoggingMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8423924E154A900C29730 /* LoggingMonitor.swift */; };
@@ -152,6 +150,8 @@
 		B1E842D224E15FDF00C29730 /* BaseVerificationMethodBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E842D124E15FDF00C29730 /* BaseVerificationMethodBuilder.swift */; };
 		B1FC6CA1258B4AFD008D1017 /* VerificationEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC6CA0258B4AFD008D1017 /* VerificationEvent.swift */; };
 		B1FC6CA5258B4CB6008D1017 /* AutoVerificationEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC6CA4258B4CB6008D1017 /* AutoVerificationEvent.swift */; };
+		B7FBBE38F38F4F59924B4B96 /* BasicAuthorizationMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D206F8A510420D9EA4F0F9 /* BasicAuthorizationMethodTests.swift */; };
+		D4DDEF24C60A4DC293E37884 /* BasicAuthorizationMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBC38B2F338408D80F12ECB /* BasicAuthorizationMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +168,7 @@
 		30BC95CAA38FB91215C425F8 /* Pods_Verification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Verification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		522340C046E2AB95BDA9196B /* Pods_Verification_VerificationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Verification_VerificationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		708378DAF96DEE26452BFC2A /* Pods-Verification-VerificationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Verification-VerificationTests.debug.xcconfig"; path = "Target Support Files/Pods-Verification-VerificationTests/Pods-Verification-VerificationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		74D206F8A510420D9EA4F0F9 /* BasicAuthorizationMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAuthorizationMethodTests.swift; sourceTree = "<group>"; };
 		81958E9236C92FA63FA25DAE /* Pods-Verification-VerificationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Verification-VerificationTests.release.xcconfig"; path = "Target Support Files/Pods-Verification-VerificationTests/Pods-Verification-VerificationTests.release.xcconfig"; sourceTree = "<group>"; };
 		8803435F2AEBB17B004381CB /* sslfuncs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sslfuncs.c; sourceTree = "<group>"; };
 		880343602AEBB17C004381CB /* SocketAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketAddress.h; sourceTree = "<group>"; };
@@ -193,7 +194,6 @@
 		B197B94324E16E3000889BD0 /* VerificaitonLanguageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificaitonLanguageTests.swift; sourceTree = "<group>"; };
 		B197B94424E16E3000889BD0 /* AcceptedLanguagesParsingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptedLanguagesParsingTests.swift; sourceTree = "<group>"; };
 		B197B94524E16E3000889BD0 /* AppKeyAuthorizationMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppKeyAuthorizationMethodTests.swift; sourceTree = "<group>"; };
-		74D206F8A510420D9EA4F0F9 /* BasicAuthorizationMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAuthorizationMethodTests.swift; sourceTree = "<group>"; };
 		B197B94724E16E3100889BD0 /* SimCardInfoHolderEncodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimCardInfoHolderEncodingTests.swift; sourceTree = "<group>"; };
 		B1C3C0AD27CE35D60021A0EC /* HttpRawResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRawResponseHandler.swift; sourceTree = "<group>"; };
 		B1CA8193257F74340097B625 /* AutoVerificationInitiationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoVerificationInitiationData.swift; sourceTree = "<group>"; };
@@ -265,7 +265,6 @@
 		B1E8423424E154A900C29730 /* AuthorizationMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationMethod.swift; sourceTree = "<group>"; };
 		B1E8423524E154A900C29730 /* SinchSessionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinchSessionHandler.swift; sourceTree = "<group>"; };
 		B1E8423624E154A900C29730 /* AppKeyAuthorizationMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppKeyAuthorizationMethod.swift; sourceTree = "<group>"; };
-		BEBC38B2F338408D80F12ECB /* BasicAuthorizationMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAuthorizationMethod.swift; sourceTree = "<group>"; };
 		B1E8423724E154A900C29730 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		B1E8423824E154A900C29730 /* ApiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		B1E8423924E154A900C29730 /* LoggingMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingMonitor.swift; sourceTree = "<group>"; };
@@ -315,6 +314,7 @@
 		B1E842D124E15FDF00C29730 /* BaseVerificationMethodBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVerificationMethodBuilder.swift; sourceTree = "<group>"; };
 		B1FC6CA0258B4AFD008D1017 /* VerificationEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationEvent.swift; sourceTree = "<group>"; };
 		B1FC6CA4258B4CB6008D1017 /* AutoVerificationEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoVerificationEvent.swift; sourceTree = "<group>"; };
+		BEBC38B2F338408D80F12ECB /* BasicAuthorizationMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAuthorizationMethod.swift; sourceTree = "<group>"; };
 		CB66CBA28D723E2B2EF086B6 /* Pods-Verification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Verification.debug.xcconfig"; path = "Target Support Files/Pods-Verification/Pods-Verification.debug.xcconfig"; sourceTree = "<group>"; };
 		FE30DF4B845BBE4B9A1BC28D /* Pods-Verification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Verification.release.xcconfig"; path = "Target Support Files/Pods-Verification/Pods-Verification.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1051,8 +1051,6 @@
 			dependencies = (
 			);
 			name = Verification;
-			packageProductDependencies = (
-			);
 			productName = Verification;
 			productReference = B1E8418E24E1527900C29730 /* Verification.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1105,8 +1103,6 @@
 				Base,
 			);
 			mainGroup = B1E8418424E1527900C29730;
-			packageReferences = (
-			);
 			productRefGroup = B1E8418F24E1527900C29730 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1165,13 +1161,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Verification-VerificationTests/Pods-Verification-VerificationTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Verification-VerificationTests/Pods-Verification-VerificationTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

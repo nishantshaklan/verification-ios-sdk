@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.social_media_url   = "https://twitter.com/wearesinch"
 
   spec.platform     = :ios
-  spec.ios.deployment_target = "13.0"
+  spec.ios.deployment_target = "13.4"
   spec.swift_version = '5.0'
 
   spec.source       = { :git => "https://github.com/sinch/verification-ios-sdk.git", :tag => "#{spec.version}" }
@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
   
   spec.dependency "Alamofire", "~> 5.2"
   spec.dependency "ReachabilitySwift"
-  spec.dependency "PhoneNumberKit", "~> 3.1"
-  spec.dependency "CocoaLumberjack/Swift", "~> 3.7.0"
+  spec.dependency "PhoneNumberKit/PhoneNumberKitCore", "~> 3.1"
+  spec.dependency "SwiftyBeaver", "~> 2.0"
 
 end
