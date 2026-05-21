@@ -12,7 +12,7 @@ import Verification
 class VerificationController: UIViewController {
     
     @IBOutlet weak var phoneNumberTextField: PhoneNumberUITextField!
-    @IBOutlet weak var envNameLabel: UILabel!
+    @IBOutlet weak var envButton: UIButton!
     
     @IBOutlet weak var smsButton: UIButton!
     @IBOutlet weak var flashcallButton: UIButton!
@@ -41,7 +41,7 @@ class VerificationController: UIViewController {
     private var verification: Verification?
     private var selectedEnv: Environment = Environments[0] {
         didSet {
-            envNameLabel.text = selectedEnv.name
+            updateEnvButton()
             Constants.Api.userDefinedDomain = selectedEnv.domain
         }
     }
@@ -76,7 +76,18 @@ class VerificationController: UIViewController {
         [phoneNumberTextField, customField, referenceField, acceptedLanguagesField].forEach {
             $0?.delegate = self
         }
-        envNameLabel.addInteraction(UIContextMenuInteraction(delegate: self))
+        envButton.showsMenuAsPrimaryAction = true
+        envButton.tintColor = .label
+        updateEnvButton()
+    }
+
+    private func updateEnvButton() {
+        envButton.setTitle("\(selectedEnv.name) ▼", for: .normal)
+        envButton.menu = UIMenu(title: "Environment", children: Environments.map { env in
+            UIAction(title: env.name, state: (self.selectedEnv == env) ? .on : .off) { [weak self] _ in
+                self?.selectedEnv = env
+            }
+        })
     }
     
     @IBAction func didTapInitializeButton(_ sender: Any) {
@@ -194,19 +205,6 @@ class VerificationController: UIViewController {
             .build()
         
         return seamlessVerification
-    }
-}
-
-extension VerificationController: UIContextMenuInteractionDelegate {
-    
-    func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
-        
-        return UIContextMenuConfiguration(identifier: nil, previewProvider: nil, actionProvider: { elem in
-            let children = Environments.map { item in
-                UIAction(title: item.name, state: (self.selectedEnv == item) ? .on : .off, handler: { _ in self.selectedEnv = item })
-            }
-            return UIMenu(title: "Envirnoments", options: .displayInline, children: children)
-        })
     }
 }
 
