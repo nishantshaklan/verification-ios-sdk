@@ -43,11 +43,6 @@ class VerificationController: UIViewController {
         didSet {
             updateEnvButton()
             Constants.Api.userDefinedDomain = selectedEnv.domain
-            if selectedEnv.name.localizedCaseInsensitiveContains("India") {
-                Constants.Api.userDefinedIndiaDomain = selectedEnv.domain
-            } else {
-                Constants.Api.userDefinedIndiaDomain = nil
-            }
         }
     }
     

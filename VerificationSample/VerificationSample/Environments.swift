@@ -20,8 +20,6 @@ let Environments: [Environment] = [
     Environment(domain: "https://dc-usw2-std.verification.api.sinch.com/", name: "US", appKey: "<YOUR APP KEY>", appSecret: "<YOUR APP SECRET>"),
     Environment(domain: "https://dc-aps1-std.verification.api.sinch.com/", name: "APS", appKey: "<YOUR APP KEY>", appSecret: "<YOUR APP SECRET>"),
     Environment(domain: "https://dc-euc1-std.verification.api.sinch.com/", name: "EU", appKey: "<YOUR APP KEY>", appSecret: "<YOUR APP SECRET>"),
-    Environment(domain: "https://smvprod.sinchconverse.com/", name: "Production India", appKey: "<YOUR APP KEY>", appSecret: "<YOUR APP SECRET>"),
-    Environment(domain: "https://smv.sinchconverse.com/", name: "UAT India", appKey: "<YOUR APP KEY>", appSecret: "<YOUR APP SECRET>"),
     Environment(domain: "https://verificationapi-v1-01.sinchlab.com/", name: "Ftest1", appKey: "<YOUR APP KEY>", appSecret: "<YOUR APP SECRET>"),
     Environment(domain: "https://ft1-verification.api.sinchlab.com/", name: "Ftest1 BROK", appKey: "<YOUR APP KEY>", appSecret: "<YOUR APP SECRET>"),
     Environment(domain: "https://verificationapi-v1-02.sinchlab.com/", name: "Ftest2", appKey: "<YOUR APP KEY>", appSecret: "<YOUR APP SECRET>"),
